@@ -2,15 +2,41 @@
     font-family: Helvetica, Arial, sans-serif;
   }
   
+  body {
+    background-color: rgba(56, 108, 112, 0.1);
+    margin: 0 auto;
+  }
   
   h1 {
     color: SeaGreen;
   }
   
+  header {
+    background-color: #466995;
+    border-bottom: 1px solid #466995;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
   
-  p, 
+  ul {
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
   li {
-    font-size: 18px;
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 120px;
+  }
+
+  li:hover {
+    color: #DBE9EE;
   }
   
   
@@ -22,6 +48,10 @@
     display:none;
     font-size:90%;
   }
+
+  #Cuestionario {
+    position: relative;
+  }
   input:focus + .help {
     display:inline-block;
   }
@@ -29,4 +59,40 @@
   input:out-of-range {
     border-color:hsl(0, 50%, 50%);
   }
+  h1 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
   
+  h2 {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    margin: 0 auto 20px auto;
+  }
+
+  p {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+  }
+
+  footer {
+    background-color: #DBE9EE;
+    text-align: center;
+    height: 100px;
+  }
+
+  .welcome {
+    background-color: #DBE9EE;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 50px;
+  }
